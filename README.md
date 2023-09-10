@@ -27,7 +27,7 @@
 <h1>How Does It Work?</h1>
 <ol>
    <li>Users' CV's (PDF Files) and ideal CV (String) are sent to the Flask Back-end for processing via the route /upload-pdf</li>
-   <li>In the Flask Back-end, the data is sent to a function called GetBestCandidate() where the processing occurrs</li>
+   <li>In the Flask Back-end, the data is sent to a function called GetBestCandidate() where the processing occurs</li>
    <li>Here, the pdf files are saved in a folder, chunked, then embedded via a huggingface model and then stored in a ChromaDB Vector database to be queried</li>
    <li>GPT-3.5 runs the query to find the most suitable candidates and returns this to the Front-end for it to be rendered.</li>
 </ol>
